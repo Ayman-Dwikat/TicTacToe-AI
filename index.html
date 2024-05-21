@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="game.css" />
+    <script src="AI.js" defer></script>
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <h1 class="mainTitle">Tic Tac Toe /xoxo</h1>
+    <div class="controls">
+      <!-- buttons to restart or change options -->
+      <button class="again-btn" onclick="startGame()">Again!</button>
+      <button class="options-btn" onclick="options()">Options</button>
+      <!-- flags of the current game mode and current player turn -->
+      <h1>mode: <span id="mode">Easy</span></h1>
+      <h1>turn: <span id="turn">X</span></h1>
+    </div>
+    <!-- the board -->
+    <div class="board" id="board">
+      <div class="row">
+        <div class="cell" id="c0"></div>
+        <div class="cell" id="c1"></div>
+        <div class="cell" id="c2"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="c3"></div>
+        <div class="cell" id="c4"></div>
+        <div class="cell" id="c5"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="c6"></div>
+        <div class="cell" id="c7"></div>
+        <div class="cell" id="c8"></div>
+      </div>
+    </div>
+    <!-- board end -->
+    <!-- score popup to display the result -->
+    <div class="popup" id="popup">
+      <h1 id="score"></h1>
+      <button class="tryAgain-btn" onclick="startGame()">try again!</button>
+    </div>
+    <!-- options menu to change game mode -->
+    <div class="options-panel" id="options">
+      <p>choose mode</p>
+      <button name="Hard" class="options-btn" onclick="changeMode(event)">
+        Hard
+      </button>
+      <button name="Medium" class="options-btn" onclick="changeMode(event)">
+        Medium
+      </button>
+      <button name="Easy" class="options-btn" onclick="changeMode(event)">
+        Easy
+      </button>
+      <button name="2Players" class="options-btn" onclick="changeMode(event)">
+        2 players
+      </button>
+    </div>
+    <!-- end options -->
+    <!-- black aura behind the options menu -->
+    <div class="aura" id="aura" onclick="closeOptions()"></div>
+  </body>
+</html>
