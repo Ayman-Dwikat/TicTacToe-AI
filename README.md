@@ -1,2 +1,2 @@
-# XO_AI
-XO game for two players or against the AI
+# Demo
+[Preview the design here](https://ayman-dwikat.github.io/XO_AI/)
