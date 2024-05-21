@@ -1,0 +1,150 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.controls {
+  position: absolute;
+  left: 0;
+  margin-right: auto;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.again-btn {
+  width: 150px;
+  height: 60px;
+  font-size: 22px;
+  color: white;
+  background-color: rgb(14, 175, 62);
+  margin-top: 30px;
+}
+.again-btn:hover {
+  background-color: rgb(13, 105, 41);
+  cursor: pointer;
+}
+.options-btn {
+  width: 150px;
+  height: 60px;
+  font-size: 22px;
+  color: white;
+  background-color: rgb(180, 4, 4);
+  margin-top: 30px;
+  opacity: 1;
+}
+.options-btn:hover {
+  background-color: rgb(99, 13, 13);
+  cursor: pointer;
+}
+.tryAgain-btn {
+  width: 200px;
+  height: 80px;
+  font-size: 26px;
+  color: white;
+  background-color: rgb(14, 175, 62);
+  margin-top: 30px;
+}
+.tryAgain-btn:hover {
+  background-color: rgb(13, 105, 41);
+  cursor: pointer;
+}
+.board {
+  margin-top: 35px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 200px;
+  /* border: 2px solid; */
+  /* background-color: brown; */
+}
+.cell {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  width: 200px;
+  height: 200px;
+  border: 4px solid;
+}
+
+.popup {
+  border: 1px solid;
+  width: 550px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  position: fixed;
+  top: 25%;
+  color: white;
+
+  background-color: rgba(45, 45, 45, 0.95);
+
+  z-index: 1002;
+}
+
+.aura {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.options-panel {
+  border: 1px solid;
+  width: 550px;
+  height: 600px;
+
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 35px;
+  position: fixed;
+  top: 15%;
+
+  background-color: darkcyan;
+  z-index: 1002;
+}
+.mainTitle {
+  font-size: 50;
+}
+
+.cell:first-child {
+  border-left: none;
+}
+
+.cell:last-child {
+  border-right: none;
+}
+.row:first-child .cell {
+  border-bottom: 8px solid black;
+  border-top: none;
+}
+
+.row:last-child .cell {
+  border-top: 8px solid black;
+  border-bottom: none;
+}
+.row:nth-child(2) .cell {
+  border-top: 8px solid black;
+  border-bottom: none;
+}
