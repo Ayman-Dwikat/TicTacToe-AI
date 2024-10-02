@@ -4,7 +4,10 @@ This project is a responsive Tic Tac Toe game that allows players to compete aga
 
 ### Features
 - **Two Player Mode:** Play against a friend in a local two-player mode.
-- **AI Opponent:** Challenge an intelligent AI that adapts to the player's moves for a more competitive experience.
+- **AI Opponent:** Challenge an intelligent AI with three difficulty levels:
+  - **Easy:** AI makes random moves.
+  - **Medium:** AI employs basic strategies to win.
+  - **Hard:** AI uses advanced strategies to ensure a competitive match.
 - **Responsive Design:** The game layout adjusts seamlessly to different screen sizes, ensuring a mobile-friendly experience.
 - **Game Reset:** Easily reset the game to start a new match.
 - **Score Tracking:** Keep track of wins and overall scores throughout the game sessions.
